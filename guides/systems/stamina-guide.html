@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <base href="/zzz-guide/">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>体力规划指南 | 绝区零攻略站</title>
+  <meta name="description" content="绝区零体力(Battery)规划完全指南：电池分配策略、资源刷取优先级、不同等级阶段规划、每日体力最优分配方案。">
+  <link rel="stylesheet" href="../../css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "体力规划指南",
+    "description": "绝区零体力(Battery)规划完全指南：电池分配、资源优先级与每日最优分配方案。",
+    "datePublished": "2026-06-04",
+    "dateModified": "2026-06-04",
+    "inLanguage": "zh-CN",
+    "author": { "@type": "Organization", "name": "绝区零攻略站" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "体力多久恢复满？", "acceptedAnswer": { "@type": "Answer", "text": "体力上限240点，每6分钟恢复1点，从0到满需要24小时。因此建议每天上线至少1-2次清体力，避免溢出浪费。" } },
+      { "@type": "Question", "name": "新手应该优先刷什么？", "acceptedAnswer": { "@type": "Answer", "text": "1-30级：优先推主线+刷角色突破材料；30-40级：刷技能材料+音擎突破材料；40级后：开始刷驱动盘（圣遗物）。前期绝对不要刷驱动盘本，效率极低。" } },
+      { "@type": "Question", "name": "每天体力怎么分配？", "acceptedAnswer": { "@type": "Answer", "text": "每日240体力建议分配：角色突破材料(80体) → 技能材料(80体) → 音擎材料(40体) → 驱动盘/金币(40体)。可根据当前最紧缺资源灵活调整。" } },
+      { "@type": "Question", "name": "电池咖啡可以存吗？", "acceptedAnswer": { "@type": "Answer", "text": "浓缩咖啡可以存，但普通咖啡有时效限制。建议在有目标（如急需某材料突破）时集中使用囤积的咖啡，效率最大化。" } },
+      { "@type": "Question", "name": "什么时候可以开始刷驱动盘？", "acceptedAnswer": { "@type": "Answer", "text": "建议Inter-Knot等级40级以后（解锁最高难度驱动盘本）再开始刷。40级前驱动盘产出品质低，总会被淘汰，刷了浪费体力。" } }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="../../index.html" class="site-logo">🎮 绝区零攻略站</a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="../../index.html">首页</a></li>
+        <li><a href="../characters/miyabi.html">角色攻略</a></li>
+        <li><a href="../teams/best-team-comps.html">配队推荐</a></li>
+        <li><a href="../bosses/weekly-boss-guide.html">Boss攻略</a></li>
+        <li><a href="../beginner/beginner-guide.html">新手入门</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+
+  <div class="breadcrumb">
+    <a href="../../index.html">首页</a> › <a href="w-engines.html">系统攻略</a> › 体力规划指南
+  </div>
+
+  <div class="article-header">
+    <h1>⚡ 绝区零体力规划完全指南</h1>
+    <div class="article-meta">
+      <span class="version-badge">📌 v1.0</span>
+      <span>Updated 2026-06-04</span>
+      <span>电池规划</span>
+      <span>资源效率</span>
+    </div>
+  </div>
+
+  <nav class="quick-nav">
+    <h4>📑 目录</h4>
+    <ul>
+      <li><a href="#battery-basics">体力系统基础</a></li>
+      <li><a href="#resource-priority">资源刷取优先级</a></li>
+      <li><a href="#phase-planning">各阶段规划方案</a></li>
+      <li><a href="#daily-optimal">每日最优分配</a></li>
+      <li><a href="#energy-items">体力道具使用策略</a></li>
+      <li><a href="#faq">常见问题</a></li>
+    </ul>
+  </nav>
+
+  <div class="article-content">
+
+    <section id="battery-basics">
+      <h2>🔋 体力系统基础</h2>
+
+      <div class="info-card">
+        <h4>电池 (Battery) 核心参数</h4>
+        <div class="stat"><span class="stat-label">体力上限</span><span class="stat-value">240 点</span></div>
+        <div class="stat"><span class="stat-label">恢复速度</span><span class="stat-value">1点 / 6分钟</span></div>
+        <div class="stat"><span class="stat-label">每日自然恢复</span><span class="stat-value">240 点/天</span></div>
+        <div class="stat"><span class="stat-label">满时间</span><span class="stat-value">24小时（从0到满）</span></div>
+      </div>
+
+      <p>绝区零的体力系统称为<strong>「电池 (Battery)」</strong>，上限240点，每6分钟恢复1点。这意味着你每天最多自然获得240点体力，如果不及时消耗，溢出部分将直接浪费。</p>
+
+      <div class="highlight-box">
+        <p>💡 <strong>黄金法则</strong>：每天至少上线<strong>1-2次</strong>清体力。一次清完（早上或晚上）可消耗约240体力；早晚各一次可最大程度避免溢出，适合肝度较高的玩家。</p>
+      </div>
+
+      <h3>体力消耗速查表</h3>
+      <table class="build-table">
+        <thead>
+          <tr><th>关卡类型</th><th>体力消耗</th><th>每日限次</th><th>主要产出</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>角色突破材料 (Agent Certification)</td><td>20-40</td><td>不限</td><td>Certification Seal（突破证）</td></tr>
+          <tr><td>技能材料 (Skill Chip)</td><td>20-40</td><td>不限</td><td>基础/高级/特级技能芯片</td></tr>
+          <tr><td>音擎突破材料</td><td>20-40</td><td>不限</td><td>W-Engine Component</td></tr>
+          <tr><td>驱动盘 (Drive Disc)</td><td>60</td><td>不限</td><td>随机套装驱动盘</td></tr>
+          <tr><td>金币本 (Dennies)</td><td>20-40</td><td>不限</td><td>丹尼斯（金币）</td></tr>
+          <tr><td>周本 (Notorious Hunt)</td><td>60</td><td>3次/周</td><td>核心技突破材料</td></tr>
+          <tr><td>零号空洞 (Hollow Zero)</td><td>0</td><td>1次/周</td><td>周常奖励（菲林+素材）</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="resource-priority">
+      <h2>📊 资源刷取优先级</h2>
+      <p>体力永远是最稀缺的资源。以下是按<strong>角色成长稳定性</strong>排序的刷取优先级：</p>
+
+      <table class="build-table">
+        <thead>
+          <tr><th>优先级</th><th>资源类型</th><th>理由</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="priority-badge priority-s">S 最高</span></td>
+            <td>角色等级突破材料</td>
+            <td>等级直接影响基础面板（ATK/DEF/HP），是战力的基础。每次突破均有大幅提升。</td>
+          </tr>
+          <tr>
+            <td><span class="priority-badge priority-s">S 最高</span></td>
+            <td>核心技突破材料（周本）</td>
+            <td>核心技升级带来技能倍率质变。周本限次获取，<strong>每周必打满3次</strong>。</td>
+          </tr>
+          <tr>
+            <td><span class="priority-badge priority-a">A 优先</span></td>
+            <td>技能升级材料</td>
+            <td>技能等级直接决定输出倍率。主C的核心技能优先拉满，辅助可点到6-8级。</td>
+          </tr>
+          <tr>
+            <td><span class="priority-badge priority-a">A 优先</span></td>
+            <td>音擎突破材料</td>
+            <td>音擎等级提供基础攻击力，专武/核心音擎应优先突破至当前上限。</td>
+          </tr>
+          <tr>
+            <td><span class="priority-badge priority-b">B 次要</span></td>
+            <td>驱动盘</td>
+            <td>RNG成分高，收益不稳定。40级前产出品质低，40级后解锁最高本再刷。</td>
+          </tr>
+          <tr>
+            <td><span class="priority-badge priority-b">B 次要</span></td>
+            <td>金币 (Dennies)</td>
+            <td>前期获取充足，中后期技能升级消耗大。仅在金币见底时刷少量补充。</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="highlight-box">
+        <p>💡 <strong>一句话总结</strong>：角色突破 > 技能 > 音擎 > 驱动盘 > 金币。「确定性提升」永远优先于「RNG赌博」，先稳住基础再追求上限。</p>
+      </div>
+    </section>
+
+    <section id="phase-planning">
+      <h2>📈 各阶段规划方案</h2>
+
+      <h3>🌱 新手期（Inter-Knot Lv.1-30）</h3>
+      <p>这个阶段资源需求集中在<strong>角色基础养成</strong>。你只有1-2个核心角色需要投入。</p>
+      <table class="build-table">
+        <thead><tr><th>每日体力分配</th><th>体力</th><th>用途</th></tr></thead>
+        <tbody>
+          <tr><td>主线任务</td><td>0</td><td>推进度、解锁功能。主线不消耗体力，优先做。</td></tr>
+          <tr><td>角色突破材料</td><td>120</td><td>拉满1-2个主力角色的等级</td></tr>
+          <tr><td>技能/HIA材料</td><td>80</td><td>主力角色的核心技能</td></tr>
+          <tr><td>音擎材料</td><td>40</td><td>主力音擎突破</td></tr>
+          <tr><td>驱动盘</td><td>0</td><td>⚠️ 绝对不要刷！</td></tr>
+        </tbody>
+      </table>
+
+      <h3>🌿 成长期（Inter-Knot Lv.30-40）</h3>
+      <p>队伍开始成型，2-3个角色需要同步提升。技能材料需求大幅增加。</p>
+      <table class="build-table">
+        <thead><tr><th>每日体力分配</th><th>体力</th><th>用途</th></tr></thead>
+        <tbody>
+          <tr><td>角色突破材料</td><td>80</td><td>主C优先突破，辅助可稍慢</td></tr>
+          <tr><td>技能材料</td><td>80</td><td>主C核心技能优先点高</td></tr>
+          <tr><td>音擎材料</td><td>40</td><td>保持同步</td></tr>
+          <tr><td>周本 (留体力)</td><td>40</td><td>每周180体力，分摊到日</td></tr>
+          <tr><td>驱动盘</td><td>0</td><td>⚠️ 仍然不推荐！</td></tr>
+        </tbody>
+      </table>
+
+      <h3>🌳 成型期（Inter-Knot Lv.40+）</h3>
+      <p>队伍基本成型，可以开始投入驱动盘本的终局Farm。金币也开始变得紧张。</p>
+      <table class="build-table">
+        <thead><tr><th>每日体力分配</th><th>体力</th><th>用途</th></tr></thead>
+        <tbody>
+          <tr><td>角色突破材料</td><td>40-60</td><td>维持主C满级，新角色培养</td></tr>
+          <tr><td>技能材料</td><td>40-60</td><td>补满核心技能</td></tr>
+          <tr><td>驱动盘</td><td>60-120</td><td>主C套装Farm，追求主属性对</td></tr>
+          <tr><td>周本</td><td>60x3=180/周</td><td>无论如何不能断</td></tr>
+          <tr><td>金币（必要时）</td><td>20-40</td><td>仅在金币<5万时刷</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="daily-optimal">
+      <h2>✅ 每日最优分配方案</h2>
+      <p>以每日240自然体力为基准，以下是通用型最优分配模板（适用于30级以上玩家）：</p>
+
+      <div class="info-card">
+        <h4>📋 推荐每日路线</h4>
+        <ol>
+          <li><strong>上线第一件事</strong>：打开「每日任务」面板，接取所有日常任务。</li>
+          <li><strong>角色突破本</strong>（80体力）：根据当前最需要突破的角色，刷对应属性的 Certification Seal。</li>
+          <li><strong>技能材料本</strong>（80体力）：刷主C当前最需要升级的技能对应的芯片类型。</li>
+          <li><strong>音擎材料本</strong>（40体力）：保持主C音擎等级同步。</li>
+          <li><strong>驱动盘/金币</strong>（40体力，灵活项）：Lv.40前刷金币备用，Lv.40后优先刷驱动盘。</li>
+          <li><strong>周本</strong>（每3天打1次分摊）：周本60体一次，每周3次共180体，约每2天打一次。</li>
+        </ol>
+      </div>
+
+      <div class="highlight-box">
+        <p>💡 <strong>效率技巧</strong>：优先刷取「今日UP」的材料本。每日轮换的材料类型不同（周一/四为冰+火，周二/五为电+物理，周三/六为以太+风），合理安排刷取日期可以节省大量时间。</p>
+      </div>
+    </section>
+
+    <section id="energy-items">
+      <h2>☕ 体力道具使用策略</h2>
+
+      <h3>体力恢复道具一览</h3>
+      <table class="build-table">
+        <thead>
+          <tr><th>道具名称</th><th>恢复量</th><th>获取来源</th><th>使用建议</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>浓缩咖啡 (Concentrated Coffee)</td>
+            <td>60 体力</td>
+            <td>大月卡奖励、活动兑换、商店购买</td>
+            <td>无时间限制，可长期囤积。<strong>建议在目标明确时集中使用</strong>（如新角色上线、双倍掉落活动）。</td>
+          </tr>
+          <tr>
+            <td>普通咖啡 (Coffee)</td>
+            <td>30 体力</td>
+            <td>每日签到、小月卡、任务奖励</td>
+            <td>有时效限制（部分咖啡有7天有效期），<strong>优先消耗有时限的</strong>。</td>
+          </tr>
+          <tr>
+            <td>菲林兑换体力</td>
+            <td>60-100 体力</td>
+            <td>每日限兑换N次（递增费用）</td>
+            <td>⚠️ <strong>极度不推荐</strong>。菲林应全部用于抽卡，用菲林换体力亏到爆炸。仅重氪玩家可考虑前1-2次性价比兑换。</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="tip-box highlight-box">
+        <p>💡 <strong>最佳使用时机</strong>：浓缩咖啡和体力道具的最佳使用时机是——① 新版本新角色刚上线，急需拉满材料；② 双倍/三倍掉落活动期间（如果ZZZ有此类型活动）；③ 周本刷新日，确保3次周本用浓缩咖啡快速完成。</p>
+      </div>
+    </section>
+
+    <section id="faq">
+      <h2>❓ 常见问题 FAQ</h2>
+      <div class="faq-item">
+        <div class="faq-q">Q1: 体力多久回满？每天最多能拿多少体力？</div>
+        <div class="faq-a"><p>体力上限240，每6分钟回1点，24小时自然回满。每天自然恢复=240点，这是你每日获取体力的大头。加上可能的咖啡/月卡额外体力，每日总获取约240-300点。</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Q2: 新手前期到底该刷什么？</div>
+        <div class="faq-a"><p>1-30级：角色等级突破 > 音擎突破 > 技能；30-40级：技能材料 > 突破材料 > 音擎；40级以后加入驱动盘。核心原则：前40级绝对不要刷驱动盘本。金币本前期也不需要刻意刷。</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Q3: 驱动盘什么时候开始刷？怎么刷最划算？</div>
+        <div class="faq-a"><p>Inter-Knot 40级解锁最高级驱动盘本后开始。建议先给主C刷一套「主属性正确」的4件套+散件2件套即可，不必追求极品副词条。优先确保主属性正确（IV号位暴击/暴伤、V号位属性杯、VI号位攻击%），副属性随缘。</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Q4: 周本打几次？要全清吗？</div>
+        <div class="faq-a"><p><strong>每周3次必须全清</strong>。周本 (Notorious Hunt) 产出核心技突破材料，每周限3次，这是不可替代的核心资源。即使体力紧张也要优先保证周本打满。每次60体力，合计180体/周。</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Q5: 要不要用菲林买体力？</div>
+        <div class="faq-a"><p><strong>强烈不推荐</strong>。对于零氪/微氪玩家，菲林是获取限定角色的唯一途径，用菲林换体力是极其低效的交换。只有大月卡氪满的重氪玩家，且已经拥有充足菲林预算的前提下，可以考虑每日前1-2次菲林兑换（约50-100菲林）。</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Q6: 金币（Dennies）不够了怎么办？</div>
+        <div class="faq-a"><p>前期金币充足，一般到40级后技能升级开始消耗大量金币（一个技能8→10级约消耗10-15万）。建议在金币低于5万时刷少量金币本补充，但不要作为长期Farm目标。活动和商店兑换也是金币的重要来源。</p></div>
+      </div>
+    </section>
+
+    <section class="references">
+      <h3>📖 参考来源</h3>
+      <ol>
+        <li><a href="https://www.prydwen.gg/zenless/guides/stamina-guide" target="_blank" rel="noopener">Prydwen - ZZZ Stamina & Resource Guide</a></li>
+        <li><a href="https://bbs.nga.cn/thread.php?stid=388" target="_blank" rel="noopener">NGA绝区零版 - 体力效率最大化攻略</a></li>
+        <li><a href="https://wiki.biligame.com/zzz/体力系统" target="_blank" rel="noopener">Bilibili Wiki - 体力电池系统</a></li>
+        <li><a href="https://zenless.hoyoverse.com/" target="_blank" rel="noopener">绝区零官方网站</a></li>
+      </ol>
+    </section>
+
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <p>绝区零攻略站 © 2026 · 非官方社区攻略站点 · 游戏内容版权归 HoYoverse 所有</p>
+</footer>
+
+</body>
+</html>

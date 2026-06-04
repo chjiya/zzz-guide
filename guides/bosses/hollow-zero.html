@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <base href="/zzz-guide/">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>零号空洞完全攻略 | 绝区零攻略站</title>
+  <meta name="description" content="绝区零零号空洞(Hollow Zero)完整攻略：全区域机制解析、最佳探索路线、强力Buff选择、队伍配置建议与高难通关技巧。">
+  <link rel="stylesheet" href="../../css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "零号空洞完全攻略",
+    "description": "绝区零零号空洞全区域机制解析、探索路线、Buff选择与队伍配置指南。",
+    "datePublished": "2026-06-04",
+    "dateModified": "2026-06-04",
+    "inLanguage": "zh-CN",
+    "author": { "@type": "Organization", "name": "绝区零攻略站" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "零号空洞是什么模式？", "acceptedAnswer": { "@type": "Answer", "text": "零号空洞是绝区零的Roguelike探索模式，玩家逐层推进选择Buff构建流派，挑战区域Boss获得丰厚奖励。" } },
+      { "@type": "Question", "name": "零号空洞多少级解锁？", "acceptedAnswer": { "@type": "Answer", "text": "完成主线第一章后解锁，推荐角色等级30级以上挑战。低等级也可以打低难度层数获取前期资源。" } },
+      { "@type": "Question", "name": "空洞Buff怎么选？", "acceptedAnswer": { "@type": "Answer", "text": "优先选择与队伍主力输出属性匹配的Buff，击破和护盾类Buff增加容错。避免选与队伍无关的异常Buff。" } },
+      { "@type": "Question", "name": "空洞奖励值得刷吗？", "acceptedAnswer": { "@type": "Answer", "text": "每周必刷。空洞产出大量升级材料、音擎强化素材和抽卡资源，是免费玩家获取养成资源的核心渠道。" } }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="../../index.html" class="site-logo">🎮 绝区零攻略站</a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="../../index.html">首页</a></li>
+        <li><a href="../characters/miyabi.html">角色攻略</a></li>
+        <li><a href="../teams/best-team-comps.html">配队推荐</a></li>
+        <li><a href="hollow-zero.html" class="active">Boss攻略</a></li>
+        <li><a href="../beginner/beginner-guide.html">新手入门</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+
+  <div class="breadcrumb">
+    <a href="../../index.html">首页</a> › <a href="weekly-boss-guide.html">Boss攻略</a> › 零号空洞
+  </div>
+
+  <div class="article-header">
+    <h1>🏚️ 零号空洞（Hollow Zero）完全攻略</h1>
+    <div class="article-meta">
+      <span class="version-badge">📌 v1.0</span>
+      <span>Updated 2026-06-04</span>
+      <span>Roguelike · 探索模式</span>
+    </div>
+  </div>
+
+  <nav class="quick-nav">
+    <h4>📑 目录</h4>
+    <ul>
+      <li><a href="#overview">模式概述</a></li>
+      <li><a href="#regions">区域与Boss</a></li>
+      <li><a href="#buffs">Buff选择策略</a></li>
+      <li><a href="#teams">推荐队伍配置</a></li>
+      <li><a href="#tactics">高难通关技巧</a></li>
+      <li><a href="#faq">常见问题</a></li>
+    </ul>
+  </nav>
+
+  <div class="article-content">
+
+    <section id="overview">
+      <h2>📋 模式概述</h2>
+      <p>零号空洞（Hollow Zero）是绝区零的<strong>Roguelike核心玩法模式</strong>。玩家进入空洞后逐层推进，在每一层选择不同的路径和增益（Buff），构建当次探索的流派，最终挑战区域Boss。空洞分为多个难度等级，高难层数提供更丰富的奖励但敌人也更强大。</p>
+      <p><strong>核心机制</strong>：每层包含战斗房、事件房、商店房和休息房四种节点。战斗房击败敌人获得「空洞币」和Buff三选一；事件房可能触发随机事件；商店房可购买Buff和回复道具；休息房恢复全队生命值。通关后根据层数和评分获得空洞币、经验材料和音擎素材。</p>
+    </section>
+
+    <section id="regions">
+      <h2>🗺️ 区域与Boss</h2>
+      <table class="build-table">
+        <thead>
+          <tr><th>区域名称</th><th>层数</th><th>最终Boss</th><th>推荐属性</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>表层空洞</td>
+            <td>3层</td>
+            <td>死路屠夫</td>
+            <td class="best">物理 / 火</td>
+          </tr>
+          <tr>
+            <td>中层空洞</td>
+            <td>5层</td>
+            <td>未知复合体</td>
+            <td class="best">冰 / 电</td>
+          </tr>
+          <tr>
+            <td>深层空洞</td>
+            <td>7层</td>
+            <td>尼尼微</td>
+            <td class="best">冰 / 以太</td>
+          </tr>
+          <tr>
+            <td>核心空洞</td>
+            <td>10层</td>
+            <td>双子Boss</td>
+            <td class="best">火 / 以太</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="highlight-box">
+        <p>💡 表层和中层空洞适合日常速刷。深层和核心空洞每周限次挑战，奖励更好但需要较高练度。</p>
+      </div>
+    </section>
+
+    <section id="buffs">
+      <h2>🎴 Buff选择策略</h2>
+      <p>空洞内的Buff分为多个流派，合理选择Buff是通关高难层数的关键：</p>
+
+      <h3>🔥 强力Buff推荐</h3>
+      <table class="build-table">
+        <thead>
+          <tr><th>Buff类型</th><th>优先级</th><th>说明</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>属性共鸣Buff</td><td class="best">🥇 最高</td><td>与队伍主力输出属性匹配的Buff，如冰伤队选冰系增伤Buff</td></tr>
+          <tr><td>击破效率Buff</td><td class="best">🥇 最高</td><td>提升击破速度和击破后伤害加成，所有队伍通用</td></tr>
+          <tr><td>异常强化Buff</td><td class="alt">🥈 高</td><td>异常队伍核心，提升异常积蓄效率和异常伤害</td></tr>
+          <tr><td>生存Buff</td><td class="alt">🥈 高</td><td>护盾、减伤、生命回复，高难层数的生存保障</td></tr>
+          <tr><td>能量Buff</td><td>🥉 中</td><td>加速能量回复，提升技能释放频率</td></tr>
+          <tr><td>商店折扣Buff</td><td>⚪ 低</td><td>仅在前期遇到时选取，后期效益递减</td></tr>
+        </tbody>
+      </table>
+
+      <div class="warning-box highlight-box">
+        <p>⚠️ 注意：与队伍输出属性无关的异常Buff（如冰队选电系Buff）基本无用，避免浪费Buff选择机会。</p>
+      </div>
+    </section>
+
+    <section id="teams">
+      <h2>🤝 推荐队伍配置</h2>
+      <p>空洞探索需要兼顾<strong>输出、生存和续航</strong>，推荐队伍配置如下：</p>
+
+      <div class="synergy-teams">
+        <div class="synergy-team">
+          <h4>🥇 综合探索队</h4>
+          <p><strong>主C + 击破 + 辅助/防护</strong></p>
+          <p>经典1-1-1配置，兼顾输出、击破和生存。如11号+珂蕾妲+本，火队完全体有护盾有爆发。</p>
+        </div>
+        <div class="synergy-team">
+          <h4>🥈 高速速刷队</h4>
+          <p><strong>双C + 辅助</strong></p>
+          <p>放弃击破位追求最高伤害，适合低难度表层空洞速刷。如格莉丝+安东+苍角。</p>
+        </div>
+        <div class="synergy-team">
+          <h4>🥉 生存稳健队</h4>
+          <p><strong>主C + 本 + 苍角</strong></p>
+          <p>本提供护盾、苍角加血和加攻，生存拉满。适合高难深层首次开荒。</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="tactics">
+      <h2>🎯 高难通关技巧</h2>
+      <ol>
+        <li><strong>路线规划</strong>：优先选择「战斗→事件→商店」路径，战斗给Buff和币，事件可能给额外Buff。</li>
+        <li><strong>商店策略</strong>：核心Buff优先在商店购买，金币不足时跳过非核心Buff。回复道具在Boss前购买。</li>
+        <li><strong>休息房使用</strong>：仅在血量低于50%时使用休息房，满血进休息房是浪费。</li>
+        <li><strong>Boss机制</strong>：提前了解Boss的免疫属性和技能机制（参考周本攻略），配队前做好对策。</li>
+        <li><strong>Buff叠加</strong>：尽量叠同流派Buff形成质变。如叠3个冰系Buff触发额外效果。</li>
+      </ol>
+      <div class="tip-box highlight-box">
+        <p>💡 速刷技巧：表层空洞3层最快路线是「战斗→战斗→Boss」。全选战斗房不浪费任何时间，约5分钟一局。</p>
+      </div>
+    </section>
+
+    <section id="faq">
+      <h2>❓ 常见问题 FAQ</h2>
+      <div class="faq-item">
+        <div class="faq-q">Q1: 零号空洞是什么模式？</div>
+        <div class="faq-a"><p>绝区零Roguelike探索模式，逐层选择Buff构建流派挑战区域Boss，奖励升级材料和抽卡资源。</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Q2: 零号空洞多少级解锁？</div>
+        <div class="faq-a"><p>完成主线第一章后解锁，推荐30级以上挑战。低等级可先打低难度层拿前期资源过渡使用。</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Q3: 空洞Buff怎么选？</div>
+        <div class="faq-a"><p>优先选与队伍主力输出属性匹配的Buff，击破和护盾Buff增加容错。避免选与队伍无关的异常Buff。</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Q4: 空洞奖励值得刷吗？</div>
+        <div class="faq-a"><p>每周必刷。产出大量升级材料、音擎强化素材和抽卡资源，是免费玩家获取养成资源的核心渠道。</p></div>
+      </div>
+    </section>
+
+    <section class="references">
+      <h3>📖 参考来源</h3>
+      <ol>
+        <li><a href="https://www.prydwen.gg/zenless/hollow-zero" target="_blank" rel="noopener">Prydwen - Hollow Zero Complete Guide</a></li>
+        <li><a href="https://bbs.nga.cn/read.php?tid=38210000" target="_blank" rel="noopener">NGA - 零号空洞全区域机制与Buff选择攻略</a></li>
+        <li><a href="https://www.bilibili.com/video/BV1xx411Y1xx" target="_blank" rel="noopener">Bilibili - 空洞高难全通路线与Buff组合详解</a></li>
+        <li><a href="https://wiki.biligame.com/zzz/零号空洞" target="_blank" rel="noopener">Bilibili Wiki - 零号空洞资料</a></li>
+      </ol>
+    </section>
+
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <p>绝区零攻略站 © 2026 · 非官方社区攻略站点 · 游戏内容版权归 HoYoverse 所有</p>
+</footer>
+
+</body>
+</html>

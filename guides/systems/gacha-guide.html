@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <base href="/zzz-guide/">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>抽卡系统详解 | 绝区零攻略站</title>
+  <meta name="description" content="绝区零抽卡(Gacha)系统完全指南：卡池类型详解、保底机制与软保底数学、菲林收入规划、抽卡策略建议，帮你科学抽卡不踩坑。">
+  <link rel="stylesheet" href="../../css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "抽卡系统详解",
+    "description": "绝区零抽卡系统完全指南：卡池类型、保底机制、软保底数学与菲林规划策略。",
+    "datePublished": "2026-06-04",
+    "dateModified": "2026-06-04",
+    "inLanguage": "zh-CN",
+    "author": { "@type": "Organization", "name": "绝区零攻略站" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "绝区零保底是多少抽？", "acceptedAnswer": { "@type": "Answer", "text": "角色活动池硬保底为90抽。但74抽后进入软保底区间，每抽S级概率递增约6%，实际出货集中在75-80抽。音擎池硬保底为80抽，软保底从65抽开始。" } },
+      { "@type": "Question", "name": "小保底歪了会怎样？", "acceptedAnswer": { "@type": "Answer", "text": "小保底（50%概率为当期限定）歪出常驻角色后，下一金必定是当期限定角色（大保底）。大保底状态不会跨池继承。" } },
+      { "@type": "Question", "name": "月卡党一个月能攒多少菲林？", "acceptedAnswer": { "@type": "Answer", "text": "月卡+每日活跃+活动合计约90-110抽/版本（约6周），零氪约60-75抽/版本，大小月卡约110-130抽/版本。" } },
+      { "@type": "Question", "name": "应该抽专武还是补命座？", "acceptedAnswer": { "@type": "Answer", "text": "一般情况下：专武池 > 关键命座 > 精炼专武。主C专武提升约20-30%，性价比高于大多数1命。辅助和击破角色不建议追专武。" } },
+      { "@type": "Question", "name": "常驻池要抽吗？", "acceptedAnswer": { "@type": "Answer", "text": "不要用菲林抽常驻池！只使用免费获得的常驻票(Bangboo Coupon)。常驻池有单独的300抽自选保底，靠免费票慢慢攒。" } }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="../../index.html" class="site-logo">🎮 绝区零攻略站</a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="../../index.html">首页</a></li>
+        <li><a href="../characters/miyabi.html">角色攻略</a></li>
+        <li><a href="../teams/best-team-comps.html">配队推荐</a></li>
+        <li><a href="../bosses/weekly-boss-guide.html">Boss攻略</a></li>
+        <li><a href="../beginner/beginner-guide.html">新手入门</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+
+  <div class="breadcrumb">
+    <a href="../../index.html">首页</a> › <a href="w-engines.html">系统攻略</a> › 抽卡系统详解
+  </div>
+
+  <div class="article-header">
+    <h1>🎰 绝区零抽卡系统完全详解</h1>
+    <div class="article-meta">
+      <span class="version-badge">📌 v1.0</span>
+      <span>Updated 2026-06-04</span>
+      <span>抽卡攻略</span>
+      <span>菲林规划</span>
+    </div>
+  </div>
+
+  <nav class="quick-nav">
+    <h4>📑 目录</h4>
+    <ul>
+      <li><a href="#pool-types">卡池类型一览</a></li>
+      <li><a href="#pity-system">保底机制详解</a></li>
+      <li><a href="#soft-pity">软保底数学原理</a></li>
+      <li><a href="#polychrome-planning">菲林收入与规划</a></li>
+      <li><a href="#strategy">抽卡策略建议</a></li>
+      <li><a href="#faq">常见问题</a></li>
+    </ul>
+  </nav>
+
+  <div class="article-content">
+
+    <section id="pool-types">
+      <h2>🎯 卡池类型一览</h2>
+      <p>绝区零共有<strong>4种主要卡池</strong>，每种池子的规则和货币都不同。理解各池机制是科学抽卡的第一步。</p>
+
+      <table class="build-table">
+        <thead>
+          <tr><th>卡池类型</th><th>消耗货币</th><th>保底次数</th><th>核心规则</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>限定角色池</strong><br>(Exclusive Channel)</td>
+            <td>加密母带<br>(Encrypted Master Tape)</td>
+            <td>90抽硬保底<br>50%概率</td>
+            <td>小保底50%为当期限定；歪后下一金必出（大保底）。4星每10抽保底一个。</td>
+          </tr>
+          <tr>
+            <td><strong>限定音擎池</strong><br>(W-Engine Channel)</td>
+            <td>加密母带</td>
+            <td>80抽硬保底<br>75%概率</td>
+            <td>75%概率出当期UP音擎。歪后下一金必出当期UP。与角色池保底独立计算。</td>
+          </tr>
+          <tr>
+            <td><strong>常驻角色池</strong><br>(Star-Studded Cast)</td>
+            <td>母带<br>(Master Tape)</td>
+            <td>90抽硬保底<br>300抽自选</td>
+            <td>前50抽必出第一个S级（新手福利）。累计300抽可自选任一常驻S级角色。</td>
+          </tr>
+          <tr>
+            <td><strong>邦布池</strong><br>(Bangboo Channel)</td>
+            <td>邦布券<br>(Boo Coupon)</td>
+            <td>无硬保底<br>A级邦布UP</td>
+            <td>消耗活动获取的免费票。A级邦布UP率50%。无法用菲林抽取。</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="highlight-box">
+        <p>💡 <strong>关键结论</strong>：① 永远不要用菲林换常驻票 ② 限定角色池与限定音擎池保底独立，互不影响 ③ 邦布池只用免费票，白嫖即可。</p>
+      </div>
+    </section>
+
+    <section id="pity-system">
+      <h2>📐 保底机制详解</h2>
+
+      <h3>硬保底 (Hard Pity)</h3>
+      <p><strong>角色池</strong>：90抽必出S级。若前89抽未出，第90抽100%出S。<br><strong>音擎池</strong>：80抽必出S级。若前79抽未出，第80抽100%出S。</p>
+      <p>但实际游戏中<strong>几乎不会有人吃到硬保底</strong>——因为软保底机制的存在，绝大多数玩家在75-80抽之间就会出货。</p>
+
+      <h3>大小保底机制</h3>
+      <div class="info-card">
+        <h4>角色池概率分布（限定池）</h4>
+        <div class="stat"><span class="stat-label">当期限定角色 (Rate Up)</span><span class="stat-value">50%</span></div>
+        <div class="stat"><span class="stat-label">常驻S级角色 (Standard)</span><span class="stat-value">50%</span></div>
+        <div class="stat"><span class="stat-label">小保底总概率</span><span class="stat-value">100%基础S率</span></div>
+      </div>
+      <p><strong>小保底 (50/50)</strong>：每次出S级，有50%概率是当期限定角色。如果歪了（出了常驻角色），则进入大保底状态。<br><strong>大保底 (Guarantee)</strong>：歪了一次后，下一次出S时100%是当期限定角色。大保底不会跨池继承——仅限于<strong>当前限定角色池</strong>。</p>
+
+      <h3>保底继承规则</h3>
+      <table class="build-table">
+        <thead>
+          <tr><th>项目</th><th>是否继承</th><th>说明</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>抽卡次数 (Pity Counter)</td><td class="best">✅ 继承</td><td>同类型池间继承。例如角色池A抽了50发 → 角色池B从51发开始计数。</td></tr>
+          <tr><td>大保底状态 (Guarantee)</td><td class="best">✅ 继承</td><td>歪后的下一金保证继承至下一个同类型限定池。</td></tr>
+          <tr><td>保底计数跨类型</td><td class="alt">❌ 不继承</td><td>角色池和音擎池的保底完全独立，不可互相累积。</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="soft-pity">
+      <h2>🔬 软保底 (Soft Pity) 数学原理</h2>
+      <p>软保底是米哈游抽卡系统的隐藏机制：<strong>在接近硬保底时，出货概率会急剧上升</strong>，使绝大多数玩家在达到硬保底前就出货。</p>
+
+      <h3>概率增长曲线</h3>
+      <table class="build-table">
+        <thead>
+          <tr><th>抽数区间</th><th>单抽S级概率</th><th>区间累计出货率</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>1-73抽</td><td>0.6%（固定基础概率）</td><td>约35.6%</td></tr>
+          <tr><td>74抽</td><td>约6.6%</td><td>—</td></tr>
+          <tr><td>75抽</td><td>约12.6%</td><td>—</td></tr>
+          <tr><td>76抽</td><td>约18.6%</td><td>—</td></tr>
+          <tr><td>77抽</td><td>约24.6%</td><td>—</td></tr>
+          <tr><td>78抽</td><td>约30.6%</td><td>—</td></tr>
+          <tr><td>79抽</td><td>约36.6%</td><td>—</td></tr>
+          <tr><td>80抽</td><td>约42.6%</td><td>—</td></tr>
+          <tr><td>81-89抽</td><td>继续递增</td><td>—</td></tr>
+          <tr><td>90抽</td><td>100%</td><td>—</td></tr>
+        </tbody>
+      </table>
+
+      <div class="tip-box highlight-box">
+        <p>💡 <strong>核心结论</strong>：超过90%的S级角色在75-80抽之间出货。规划菲林时，建议按<strong>150-160抽（角色+音擎）</strong>为一个"安全预算区间"，覆盖小保底歪掉的最坏情况。</p>
+      </div>
+
+      <p><strong>期望抽数</strong>：基于大量玩家数据统计，抽出一个限定S级角色的<strong>数学期望约63抽</strong>。但由于大保底的存在，实际预算应至少准备<strong>150-160抽</strong>应对最坏情况（歪一次后大保底80抽左右出货）。</p>
+    </section>
+
+    <section id="polychrome-planning">
+      <h2>💰 菲林 (Polychrome) 收入与规划</h2>
+
+      <h3>版本周期收入估算（约6周/版本）</h3>
+      <table class="build-table">
+        <thead>
+          <tr><th>收入来源</th><th>零氪 (F2P)</th><th>小月卡</th><th>大小月卡</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>每日活跃 (Daily)</td><td>3,780 菲林</td><td>3,780</td><td>3,780</td></tr>
+          <tr><td>小月卡 (Inter-Knot Membership)</td><td>—</td><td>3,780</td><td>3,780</td></tr>
+          <tr><td>大月卡 (New Eridu City Fund)</td><td>—</td><td>—</td><td>~800 + 4加密母带</td></tr>
+          <tr><td>版本活动 (Events)</td><td>~2,000-3,000</td><td>~2,000-3,000</td><td>~2,000-3,000</td></tr>
+          <tr><td>零号空洞周常</td><td>~1,200</td><td>~1,200</td><td>~1,200</td></tr>
+          <tr><td>深渊/高难 (Shiyu Defense)</td><td>~600-1,200</td><td>~600-1,200</td><td>~600-1,200</td></tr>
+          <tr><td>版本更新补偿</td><td>~600</td><td>~600</td><td>~600</td></tr>
+          <tr><td>直播兑换码</td><td>~300</td><td>~300</td><td>~300</td></tr>
+          <tr><td>签到/其他</td><td>~200</td><td>~200</td><td>~200</td></tr>
+        </tbody>
+        <tfoot>
+          <tr><td><strong>合计（约）</strong></td><td><strong>~9,000-10,500 = 56-65抽</strong></td><td><strong>~13,000-14,500 = 81-90抽</strong></td><td><strong>~14,000-16,000 = 87-100抽</strong></td></tr>
+        </tfoot>
+      </table>
+
+      <div class="highlight-box">
+        <p>💡 <strong>换算公式</strong>：1抽 = 160菲林。小月卡 ¥30 = 3,780菲林/版本 ≈ 23.6抽。大月卡 ¥68 ≈ 额外5-6抽。小月卡是性价比最高的氪金选择，每元约获得7.9菲林。</p>
+      </div>
+
+      <h3>抽卡节奏规划</h3>
+      <p>绝区零的限定角色更新周期约为<strong>3周一个UP角色</strong>（每版本2个新限定）。基于收入估算：</p>
+      <ul>
+        <li><strong>零氪玩家</strong>：每2个版本约能攒一个大保底（~150-160抽），建议<strong>跳1抽1</strong>策略。</li>
+        <li><strong>月卡玩家</strong>：每1.5个版本可凑齐一个大保底，可<strong>每版本抽1个限定</strong>（不追专武）。</li>
+        <li><strong>大小月卡玩家</strong>：基本可<strong>每版本1角色+偶尔追专武</strong>。</li>
+      </ul>
+    </section>
+
+    <section id="strategy">
+      <h2>🎯 抽卡策略建议</h2>
+
+      <h3>优先级排序</h3>
+      <ol>
+        <li><strong>强力限定主C (0命)</strong>：版本T0角色优先入手，0命即可成型。</li>
+        <li><strong>主C专武</strong>：提升约20-30%输出，性价比高于大多数1命。</li>
+        <li><strong>关键辅助/击破角色</strong>：通用性强的辅助优先捞0命。</li>
+        <li><strong>强力命座</strong>：部分角色的1命/2命质变（如雅的2命），在有余力时补。</li>
+        <li><strong>XP抽卡</strong>：喜欢就抽，开心最重要 🎉</li>
+      </ol>
+
+      <div class="info-card">
+        <h4>⚠️ 常见误区</h4>
+        <ul>
+          <li><strong>用菲林抽常驻池</strong>：最亏的操作！常驻角色会歪出来，不要主动投入菲林。</li>
+          <li><strong>垫池子</strong>：在不想抽的UP池里"垫"保底，非常危险。一旦提前出货，你的大保底就被消耗了。</li>
+          <li><strong>盲目追专武</strong>：辅助/击破角色的专武提升有限，A级下位替代足够使用。</li>
+          <li><strong>冲动消费</strong>：抽卡前明确预算，避免上头追氪。</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="faq">
+      <h2>❓ 常见问题 FAQ</h2>
+      <div class="faq-item">
+        <div class="faq-q">Q1: 绝区零保底是多少抽？会歪吗？</div>
+        <div class="faq-a"><p>角色池硬保底90抽，限定UP概率50%（小保底）。歪后下一金必出UP角色（大保底）。音擎池硬保底80抽，UP概率75%。</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Q2: 软保底从第几抽开始？</div>
+        <div class="faq-a"><p>角色池软保底从<strong>第74抽</strong>开始，每抽概率递增约6%，到80抽时单抽概率已超40%。音擎池软保底从<strong>第65抽</strong>开始。实际超过90%的玩家在软保底区间内出货。</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Q3: 保底次数会跨池继承吗？</div>
+        <div class="faq-a"><p><strong>同类型池间继承</strong>。例如你在角色池A抽了50发，转去角色池B会从51发开始计算保底。大保底状态也继承。但角色池和音擎池之间不互通。</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Q4: 月卡性价比高吗？值不值得氪？</div>
+        <div class="faq-a"><p>小月卡(¥30/月)是游戏中最具性价比的投入，提供约3,780菲林/版本，相当于23.6抽，每元约7.9菲林。如果你想稳定获取限定角色，强烈推荐小月卡。</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Q5: 新手的常驻池前50抽保底怎么用？</div>
+        <div class="faq-a"><p>新手的常驻池前50抽必定出一个S级角色（New Player Convene）。这是固定的新手福利，无法选择目标，但可以帮助你快速获得第一个五星角色，对开荒帮助巨大。</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Q6: 限定池的4星保底怎么算？</div>
+        <div class="faq-a"><p>每10抽必定出一个4星（A级角色或音擎）。4星UP的3个角色共享50%概率，歪出非UP的4星后下一4星必为UP之一。这个保底也会跨限定池继承。</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Q7: 邦布池需要氪金吗？</div>
+        <div class="faq-a"><p>不需要。邦布池使用免费获得的邦布券(Boo Coupon)，无法用菲林兑换。通过活动和周常即可积累足够的邦布券，0氪也能轻松获取S级邦布。</p></div>
+      </div>
+    </section>
+
+    <section class="references">
+      <h3>📖 参考来源</h3>
+      <ol>
+        <li><a href="https://zenless.hoyoverse.com/" target="_blank" rel="noopener">绝区零官方网站 - 抽卡规则公示</a></li>
+        <li><a href="https://www.prydwen.gg/zenless/guides/gacha-system" target="_blank" rel="noopener">Prydwen - ZZZ Gacha System Guide</a></li>
+        <li><a href="https://bbs.nga.cn/thread.php?stid=388" target="_blank" rel="noopener">NGA绝区零版 - 玩家抽卡数据统计与分析</a></li>
+        <li><a href="https://wiki.biligame.com/zzz/抽卡概率" target="_blank" rel="noopener">Bilibili Wiki - 抽卡概率与保底机制</a></li>
+      </ol>
+    </section>
+
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <p>绝区零攻略站 © 2026 · 非官方社区攻略站点 · 游戏内容版权归 HoYoverse 所有</p>
+</footer>
+
+</body>
+</html>
