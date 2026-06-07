@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <base href="/zzz-guide/">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>冰队配队攻略 | 绝区零攻略站</title>
+  <meta name="description" content="绝区零冰属性配队完全指南：雅冰队、艾莲冰队、低配冻结队全面解析。含角色选择、驱动盘推荐、输出循环与实战打法，冰系版本答案一文掌握。">
+  <link rel="stylesheet" href="../../css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "绝区零冰队配队完全攻略",
+    "description": "冰属性配队完全指南：雅冰队、艾莲冰队、低配过渡队全面解析，含驱动盘推荐与输出循环。",
+    "datePublished": "2026-06-07",
+    "dateModified": "2026-06-07",
+    "inLanguage": "zh-CN",
+    "author": { "@type": "Organization", "name": "绝区零攻略站" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "雅为什么是T0角色？", "acceptedAnswer": { "@type": "Answer", "text": "星见雅（Hoshimi Miyabi）是S级冰属性异常角色，拥有独特的「霜灼」（Frostburn）机制——在触发冻结后叠加额外冰伤，且自身技能倍率极高。她的异常积蓄效率远超同类角色，自身即可完成冻结触发+爆发输出的双循环，组队灵活度极高，是当前版本公认的最强冰系主C。" } },
+      { "@type": "Question", "name": "冰队核心角色是谁？", "acceptedAnswer": { "@type": "Answer", "text": "冰队核心分为两个体系：① 以雅为核心的「霜灼异常队」追求异常冻结与霜灼爆发；② 以艾莲·乔为核心的「强攻直伤队」通过蓄力叠加层数打出高额物理+冰伤。两套体系共用的辅助核心是苍角（Soukaku），提供全队ATK和冰属性伤害加成。" } },
+      { "@type": "Question", "name": "没有雅能玩冰队吗？", "acceptedAnswer": { "@type": "Answer", "text": "完全可以。艾莲·乔（Ellen Joe）作为S级冰属性强攻角色，自身输出能力出色，搭配苍角+莱卡恩可以组成强力的冰队直伤阵容。即使是低配玩家，也可以用苍角+派派+任意辅助走冻结过渡路线，依靠苍角的群体Buff和派派的异常积蓄来打通大部分内容。" } },
+      { "@type": "Question", "name": "苍角怎么培养？", "acceptedAnswer": { "@type": "Answer", "text": "苍角作为A级冰系辅助，核心培养方向是最大化ATK属性以提升全队Buff数值。驱动盘推荐「摇摆爵士」4件套（提高能量回复）+「啄木鸟电音」2件套（提高ATK%）。词条优先级：ATK% > 能量回复 > 穿透值。音擎推荐S级「含羞恶面」或A级「聚宝箱」，最大化辅助增益。" } },
+      { "@type": "Question", "name": "冰队需要哪些驱动盘？", "acceptedAnswer": { "@type": "Answer", "text": "雅推荐「极地重金属」4件套（提高冰伤+霜灼伤害）+「啄木鸟电音」2件套；艾莲推荐「啄木鸟电音」4件套（强攻通用）+「极地重金属」2件套；莱卡恩推荐「震星迪斯科」4件套（击破效率）+「摇摆爵士」2件套；苍角推荐「摇摆爵士」4件套+「啄木鸟电音」2件套。所有冰系角色6号位主词条优先冰属性伤害加成。" } },
+      { "@type": "Question", "name": "冰队怎么触发冻结和碎冰？", "acceptedAnswer": { "@type": "Answer", "text": "通过冰属性攻击累积冻结异常值触发冻结状态（敌人无法行动），冻结持续期间受到重击可触发碎冰（Shatter）造成额外物理伤害。雅的霜灼会在冻结基础上额外叠加一层冰属性dot，是冰队伤害的核心来源。双冰共鸣（队伍中2个冰系角色）可大幅加速异常积蓄效率。" } }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="../../index.html" class="site-logo">🎮 绝区零攻略站</a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="../../index.html">首页</a></li>
+        <li><a href="../characters/miyabi.html">角色攻略</a></li>
+        <li><a href="best-team-comps.html">配队推荐</a></li>
+        <li><a href="../bosses/weekly-boss-guide.html">Boss攻略</a></li>
+        <li><a href="../beginner/beginner-guide.html">新手入门</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+
+  <div class="breadcrumb">
+    <a href="../../index.html">首页</a> › <a href="best-team-comps.html">配队攻略</a> › 冰队配队
+  </div>
+
+  <div class="article-header">
+    <h1>❄️ 冰队配队完全攻略</h1>
+    <div class="article-meta">
+      <span class="version-badge">📌 v1.0</span>
+      <span>Updated 2026-06-07</span>
+      <span>冰属性 · 体系配队</span>
+    </div>
+  </div>
+
+  <nav class="quick-nav">
+    <h4>📑 目录</h4>
+    <ul>
+      <li><a href="#overview">冰体系概述</a></li>
+      <li><a href="#core-characters">核心角色解析</a></li>
+      <li><a href="#teams">核心配队方案</a></li>
+      <li><a href="#drive-discs">驱动盘推荐</a></li>
+      <li><a href="#rotation">输出循环</a></li>
+      <li><a href="#matchups">关卡适配</a></li>
+      <li><a href="#faq">常见问题</a></li>
+    </ul>
+  </nav>
+
+  <div class="article-content">
+
+    <section id="overview">
+      <h2>📋 冰体系概述</h2>
+      <p>冰队是绝区零当前版本<strong>最强属性体系</strong>，拥有游戏中最顶级的异常机制——<strong>冻结（Freeze）</strong>与<strong>碎冰（Shatter）</strong>。冻结状态下敌人完全无法行动，为全队创造无干扰的输出窗口；碎冰则对冻结目标造成额外物理伤害。更关键的是，S级角色<strong>星见雅（Hoshimi Miyabi）</strong>引入了专属机制「霜灼（Frostburn）」——在冻结基础上叠加持续冰属性伤害，使冰队的总伤害量级远超其他元素体系。</p>
+      <p><strong>冰队优势</strong>：冻结提供顶级控场能力，霜灼提供高额持续伤害，双冰共鸣加速异常积蓄，角色池深厚（2个S级冰系+1个强力A级辅助）。<strong>劣势</strong>：冰免疫敌人完全克制队伍，雅为限定角色获取门槛高，对驱动盘词条要求较为苛刻。</p>
+
+      <div class="highlight-box">
+        <p>💡 <strong>版本定位</strong>：冰队是v1.0版本综合评分最高的属性体系。雅（T0异常主C）+苍角（T1辅助）+莱卡恩（T0击破）的铁三角组合，在式舆防卫战和周本Boss中均表现卓越，是当前版本的「答案配队」之一。</p>
+      </div>
+    </section>
+
+    <section id="core-characters">
+      <h2>🧊 核心角色解析</h2>
+
+      <table class="build-table">
+        <thead>
+          <tr><th>角色</th><th>稀有度</th><th>定位</th><th>核心机制</th><th>推荐度</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>星见雅（Hoshimi Miyabi）</strong></td>
+            <td>S-rank</td>
+            <td>冰异常 · 主C</td>
+            <td>霜灼（Frostburn）：冻结后附加冰dot，自身异常积蓄效率极高。终结技伤害爆炸。</td>
+            <td class="best">⭐⭐⭐⭐⭐ T0必练</td>
+          </tr>
+          <tr>
+            <td><strong>艾莲·乔（Ellen Joe）</strong></td>
+            <td>S-rank</td>
+            <td>冰强攻 · 主C</td>
+            <td>蓄力层数机制：通过闪避/技能积攒「鲨鱼标记」，叠满后释放强化普攻打出高倍率爆发。</td>
+            <td class="best">⭐⭐⭐⭐⭐ T0.5</td>
+          </tr>
+          <tr>
+            <td><strong>冯·莱卡恩（Von Lycaon）</strong></td>
+            <td>S-rank</td>
+            <td>冰击破 · 副C</td>
+            <td>高削韧效率+击破后易伤倍率提升。冰属性击破可辅助冻结积蓄。</td>
+            <td class="best">⭐⭐⭐⭐⭐ T0击破</td>
+          </tr>
+          <tr>
+            <td><strong>苍角（Soukaku）</strong></td>
+            <td>A-rank</td>
+            <td>冰辅助 · 增伤</td>
+            <td>全队ATK%+冰伤%双Buff，自身有一定输出能力。冰队万金油辅助。</td>
+            <td class="best">⭐⭐⭐⭐⭐ T1辅助</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="teams">
+      <h2>🤝 核心配队方案</h2>
+
+      <h3>🥇 方案一：雅冰队（霜灼完全体 · 版本顶配）</h3>
+      <div class="info-card">
+        <h4>雅（Miyabi）+ 苍角（Soukaku）+ 莱卡恩（Lycaon）+ 灵活位</h4>
+        <div class="stat"><span class="stat-label">体系标签</span><span class="stat-value">双冰共鸣 · 霜灼异常 · 冻结控场</span></div>
+        <div class="stat"><span class="stat-label">养成成本</span><span class="stat-value">⭐⭐⭐⭐ 高（双S级+限定）</span></div>
+        <div class="stat"><span class="stat-label">输出评分</span><span class="stat-value">⭐⭐⭐⭐⭐ 版本T0天花板</span></div>
+        <div class="stat"><span class="stat-label">生存能力</span><span class="stat-value">⭐⭐⭐⭐⭐ 冻结控场=无敌</span></div>
+        <div class="stat"><span class="stat-label">灵活位推荐</span><span class="stat-value">丽娜（穿透）/ 露西（加攻）/ 派派（异常积蓄）</span></div>
+      </div>
+      <p><strong>打法思路</strong>：莱卡恩快速削韧触发冰属性击破→苍角释放E技能提供全队ATK+冰伤双Buff→雅在冻结窗口内叠满霜灼，释放终结技打出核爆级伤害。灵活位根据关卡需求选择：丽娜提供穿透进一步提升上限，露西提供稳定加攻，派派加速异常积蓄。</p>
+      <p><strong>核心连招</strong>：苍角E（Buff）→ 切莱卡恩打削韧 → 触发击破冻结 → 切雅输出：普攻叠异常 → 强化E → 终结技 → 连携技收尾。</p>
+      <p><strong>适用场景</strong>：式舆防卫战高层、周本Boss速杀、所有非冰免疫内容。是当前版本综合实力最强的队伍配置。</p>
+
+      <h3>🥈 方案二：艾莲冰队（强攻直伤 · 稳定输出）</h3>
+      <div class="info-card">
+        <h4>艾莲（Ellen）+ 苍角（Soukaku）+ 莱卡恩（Lycaon）+ 灵活位</h4>
+        <div class="stat"><span class="stat-label">体系标签</span><span class="stat-value">双冰共鸣 · 强攻爆发 · 蓄力层数</span></div>
+        <div class="stat"><span class="stat-label">养成成本</span><span class="stat-value">⭐⭐⭐⭐ 偏高中（双S级）</span></div>
+        <div class="stat"><span class="stat-label">输出评分</span><span class="stat-value">⭐⭐⭐⭐⭐ 顶级强攻</span></div>
+        <div class="stat"><span class="stat-label">生存能力</span><span class="stat-value">⭐⭐⭐⭐ 冻结控制</span></div>
+        <div class="stat"><span class="stat-label">灵活位推荐</span><span class="stat-value">安比（击破）/ 丽娜（穿透）/ 妮可（聚怪减防）</span></div>
+      </div>
+      <p><strong>打法思路</strong>：艾莲通过闪避和技能积攒「鲨鱼标记」层数→苍角释放Buff→莱卡恩削韧击破→艾莲在击破窗口内释放满层强化普攻连段，打出高倍率直伤。与雅冰队相比，艾莲队更依赖击破窗口内的爆发质量，但自身持续输出能力同样出色。</p>
+      <p><strong>核心连招</strong>：艾莲积攒层数（闪避+E）→ 苍角E Buff → 莱卡恩削韧 → 击破瞬间艾莲释放满层强化普攻+终结技。</p>
+      <p><strong>适用场景</strong>：没有雅时的冰队首选，艾莲自身输出能力足以应对所有高难内容。也是雅冰队的完美下位替代。</p>
+
+      <h3>🥉 方案三：低配冻结队（新手友好 · 成本最低）</h3>
+      <div class="info-card">
+        <h4>苍角（Soukaku）+ 派派（Piper）+ 灵活位</h4>
+        <div class="stat"><span class="stat-label">体系标签</span><span class="stat-value">冻结过渡 · 异常积蓄 · A级低配</span></div>
+        <div class="stat"><span class="stat-label">养成成本</span><span class="stat-value">⭐ 极低（双A级）</span></div>
+        <div class="stat"><span class="stat-label">输出评分</span><span class="stat-value">⭐⭐⭐ 过渡可用</span></div>
+        <div class="stat"><span class="stat-label">生存能力</span><span class="stat-value">⭐⭐⭐ 冻结控场</span></div>
+        <div class="stat"><span class="stat-label">灵活位推荐</span><span class="stat-value">安比（击破）/ 妮可（减防）/ 安东（副C）</span></div>
+      </div>
+      <p><strong>打法思路</strong>：苍角作为队伍核心提供ATK+冰伤Buff和冻结积蓄→派派利用物理异常积蓄辅助触发紊乱→灵活位提供击破或增伤。虽然输出上限不如S级冰队，但养成成本极低，适合新手过渡和资源有限的玩家。</p>
+      <p><strong>适用场景</strong>：主线推图、前期零号空洞、资源本刷取。在获取雅或艾莲后平滑升级为完全体冰队。</p>
+
+    </section>
+
+    <section id="drive-discs">
+      <h2>💿 驱动盘推荐</h2>
+      <p>驱动盘（Drive Disc）是绝区零的核心装备系统，相当于其他游戏的圣遗物/遗器。以下是冰队各角色的最优驱动盘配置：</p>
+
+      <table class="build-table">
+        <thead>
+          <tr><th>角色</th><th>驱动盘套装</th><th>主词条优先级</th><th>副词条优先级</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>雅（Miyabi）</strong></td>
+            <td>极地重金属 4件套 + 啄木鸟电音 2件套</td>
+            <td>4号: 异常精通% / 5号: 冰伤% / 6号: 异常精通%</td>
+            <td>异常精通% > ATK% > 穿透值 > 暴击率</td>
+          </tr>
+          <tr>
+            <td><strong>艾莲（Ellen）</strong></td>
+            <td>啄木鸟电音 4件套 + 极地重金属 2件套</td>
+            <td>4号: 暴击率% / 5号: 冰伤% / 6号: ATK%</td>
+            <td>暴击率% > 暴击伤害% > ATK% > 穿透值</td>
+          </tr>
+          <tr>
+            <td><strong>莱卡恩（Lycaon）</strong></td>
+            <td>震星迪斯科 4件套 + 摇摆爵士 2件套</td>
+            <td>4号: 暴击率% / 5号: 冰伤% / 6号: 冲击力%</td>
+            <td>冲击力% > 暴击率% > ATK% > 能量回复</td>
+          </tr>
+          <tr>
+            <td><strong>苍角（Soukaku）</strong></td>
+            <td>摇摆爵士 4件套 + 啄木鸟电音 2件套</td>
+            <td>4号: ATK% / 5号: ATK% / 6号: 能量回复%</td>
+            <td>ATK% > 能量回复 > 穿透值 > HP%</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="highlight-box">
+        <p>💡 <strong>驱动盘核心原则</strong>：① 所有冰系输出角色6号位优先冰属性伤害加成；② 苍角的核心属性是ATK——她的Buff数值直接取决于自身ATK；③ 莱卡恩的冲击力影响击破效率，是击破角色的第一优先级属性；④ 前期过渡可用4星驱动盘，但终局必须刷取S级金盘。</p>
+      </div>
+
+      <h3>音擎（W-Engine）推荐</h3>
+      <table class="build-table">
+        <thead>
+          <tr><th>角色</th><th>最佳音擎 (S级)</th><th>下位替代 (A级)</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>雅</td><td>时流之外（专武）</td><td>聚宝箱 / 雨林饕餮</td></tr>
+          <tr><td>艾莲</td><td>深海访客（专武）</td><td>星徽引擎 / 加农转子</td></tr>
+          <tr><td>莱卡恩</td><td>拘缚者（专武）</td><td>贵重骨核 / 湍流-α</td></tr>
+          <tr><td>苍角</td><td>含羞恶面</td><td>聚宝箱 / 湍流-β</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="rotation">
+      <h2>🔄 输出循环详解</h2>
+      <p>以<strong>雅+苍角+莱卡恩</strong>标准冰队为例的完整输出循环：</p>
+      <ol>
+        <li><strong>Buff起手阶段（苍角）</strong>：战斗开始后苍角释放E技能，为全队提供ATK%+冰伤%加成。注意：苍角的Buff有施法动画，确保在安全位置释放。</li>
+        <li><strong>击破削韧阶段（莱卡恩）</strong>：切换莱卡恩上场，使用普攻连段+强化E快速削减敌人韧性条。莱卡恩的蓄力重击削韧效率最高，优先在敌人攻击后摇时使用。</li>
+        <li><strong>异常积蓄阶段（雅）</strong>：在莱卡恩削韧期间，雅适时出场释放普攻和E技能累积冻结异常值。目标是在击破瞬间冻结异常值接近触发阈值。</li>
+        <li><strong>冻结+霜灼爆发窗口</strong>：击破触发→冻结生效→雅立即释放强化E叠加霜灼层数→在霜灼dot生效期间释放终结技→接连携技最大化输出。</li>
+        <li><strong>循环重置</strong>：爆发结束后苍角补Buff→莱卡恩继续削韧→雅重新积蓄异常值。完整一轮约25-30秒。</li>
+      </ol>
+
+      <div class="highlight-box">
+        <p>💡 <strong>进阶技巧</strong>：雅的霜灼层数最多可叠加3层，每层提供独立的冰属性dot伤害。在击破窗口内确保叠加满3层霜灼再释放终结技——终结技会基于霜灼层数获得额外伤害倍率加成，这是冰队伤害上限的关键所在。</p>
+      </div>
+
+      <h3>艾莲冰队循环差异</h3>
+      <p>艾莲队的核心循环不同点：艾莲不依赖异常积蓄，而是依赖<strong>自身「鲨鱼标记」层数</strong>。每次闪避成功获得1层，E技能命中获得2层，最多储存6层。满层时强化普攻进入「鲨鱼形态」，攻速和伤害大幅提升。循环节奏为：闪避积攒层数→苍角Buff→莱卡恩击破→艾莲释放满层强化普攻连段。</p>
+    </section>
+
+    <section id="matchups">
+      <h2>🎯 关卡适配</h2>
+      <table class="build-table">
+        <thead>
+          <tr><th>关卡类型</th><th>推荐队伍</th><th>说明</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>式舆防卫战（高层）</td><td>雅 + 苍角 + 莱卡恩</td><td>冻结控场+霜灼dot，高层最稳定配队</td></tr>
+          <tr><td>周本Boss速杀</td><td>雅/艾莲 + 苍角 + 莱卡恩</td><td>双S级冰C任选，击破后爆发秒杀</td></tr>
+          <tr><td>火弱点怪物</td><td>任意冰队</td><td>冰克火，伤害大幅提升</td></tr>
+          <tr><td>零号空洞（高难）</td><td>雅 + 苍角 + 丽娜（灵活位）</td><td>丽娜穿透提升对高防空洞怪物效果显著</td></tr>
+          <tr><td>冰免疫关卡</td><td>换用其他元素体系</td><td>冰免疫完全克制，必须切换火/电/物理队</td></tr>
+          <tr><td>主线推图/资源本</td><td>低配冻结队 / 任意冰C</td><td>难度低，冰队清怪效率高可自动</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="faq">
+      <h2>❓ 常见问题 FAQ</h2>
+      <div class="faq-item">
+        <div class="faq-q">Q1: 雅为什么是T0角色？</div>
+        <div class="faq-a"><p>星见雅（Hoshimi Miyabi）是S级冰属性异常角色，拥有独特的「霜灼」（Frostburn）机制——在触发冻结后叠加额外冰伤dot，且自身技能倍率极高（终结技倍率全角色第一）。她的异常积蓄效率远超同类角色，自身即可完成冻结触发+爆发输出的双循环，组队灵活度极高，是当前版本公认的最强冰系主C。</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Q2: 冰队核心角色是谁？</div>
+        <div class="faq-a"><p>冰队核心分为两个体系：① 以<strong>雅</strong>为核心的「霜灼异常队」追求异常冻结与霜灼爆发，上限最高；② 以<strong>艾莲·乔</strong>为核心的「强攻直伤队」通过蓄力叠加层数打出高倍率冰伤。两套体系共用的辅助核心是<strong>苍角</strong>（Soukaku），她提供全队ATK%和冰属性伤害%双Buff，是冰队万金油辅助。击破位首选<strong>莱卡恩</strong>（Lycaon）。</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Q3: 没有雅能玩冰队吗？</div>
+        <div class="faq-a"><p>完全可以。艾莲·乔（Ellen Joe）作为S级冰属性强攻角色，自身输出能力出色，搭配苍角+莱卡恩可以组成强力的冰队直伤阵容，综合评分T0.5级别，足以应对所有高难内容。即使是低配玩家，也可以用苍角+派派+任意辅助走冻结过渡路线——苍角的群体Buff和派派的异常积蓄能打通大部分非冰免疫内容，后续抽到雅或艾莲无缝升级即可。</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Q4: 苍角怎么培养？优先堆什么属性？</div>
+        <div class="faq-a"><p>苍角作为冰队核心辅助，培养方向明确：<strong>一切为了ATK</strong>。她的全队Buff数值直接取决于自身ATK面板——ATK越高，队友获得的加成越大。驱动盘推荐「摇摆爵士」4件套（提高全队能量回复）+「啄木鸟电音」2件套（提高ATK%）。主词条：4号位ATK%、5号位ATK%、6号位能量回复%。副词条优先级：ATK% > 能量回复 > 穿透值 > HP%。音擎推荐S级「含羞恶面」或A级「聚宝箱」。技能升级：E技能（核心Buff）> 终结技 > 普攻。</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Q5: 冰队需要哪些驱动盘？</div>
+        <div class="faq-a"><p>雅推荐「极地重金属」4件套（冰伤+霜灼伤害）+「啄木鸟电音」2件套；艾莲推荐「啄木鸟电音」4件套（强攻通用）+「极地重金属」2件套；莱卡恩推荐「震星迪斯科」4件套（击破效率）+「摇摆爵士」2件套；苍角推荐「摇摆爵士」4件套+「啄木鸟电音」2件套。所有冰系输出角色6号位主词条优先冰属性伤害加成。前期过渡可用4星盘，但终局必须刷取S级金盘才能发挥完整实力。</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Q6: 冰队怎么触发冻结和碎冰？</div>
+        <div class="faq-a"><p>通过冰属性攻击累积冻结异常值（屏幕左侧异常条），满值后触发冻结状态——敌人完全无法行动。冻结持续期间受到重击可触发碎冰（Shatter），造成额外物理伤害。雅的霜灼机制会在冻结基础上额外叠加1-3层冰属性dot，每层独立计算伤害，这是冰队总伤害的核心来源。双冰共鸣（队伍中有2个冰系角色）可大幅加速异常积蓄效率，使冻结触发频率提升约40%。</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Q7: 雅和艾莲谁更强？应该优先培养谁？</div>
+        <div class="faq-a"><p>雅的综合上限更高——霜灼的持续dot机制使她在长线Boss战中伤害占比更稳定，且终结技倍率全角色最高。艾莲的爆发伤害在击破窗口内极为恐怖，但更依赖操作和时机把握。如果两者都有：推荐优先培养雅（T0异常主C泛用性更强）；如果只有艾莲：她完全够用，T0.5的强攻输出足以通关所有内容。两者都需要苍角和莱卡恩作为最佳队友，共享同一套支援体系。</p></div>
+      </div>
+    </section>
+
+    <section class="references">
+      <h3>📖 参考来源</h3>
+      <ol>
+        <li><a href="https://www.prydwen.gg/zenless/characters/hoshimi-miyabi" target="_blank" rel="noopener">Prydwen - Hoshimi Miyabi Build Guide & Team Comps</a></li>
+        <li><a href="https://bbs.nga.cn/thread.php?stid=388" target="_blank" rel="noopener">NGA 绝区零版 - 冰队体系全解析与霜灼机制深度评测</a></li>
+        <li><a href="https://wiki.biligame.com/zzz/" target="_blank" rel="noopener">Bilibili Wiki - 绝区零配队资料库与驱动盘推荐</a></li>
+        <li><a href="https://zenless.hoyoverse.com/" target="_blank" rel="noopener">HoYoverse 绝区零官方网站 - 角色图鉴与战斗系统说明</a></li>
+      </ol>
+    </section>
+
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <p>绝区零攻略站 © 2026 · 非官方社区攻略站点 · 游戏内容版权归 HoYoverse 所有</p>
+</footer>
+
+  <!-- 🌐 Game Guide Network -->
+  <footer class="site-network" style="margin-top:3rem;padding:1.5rem;background:#1a1a2e;border-radius:8px;text-align:center">
+    <p style="color:#aaa;font-size:0.85rem;margin-bottom:0.8rem">🎮 攻略网络 — More Game Guides</p>
+    <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:0.6rem">
+      <a href="https://chjiya.github.io/teyvat-guide/" style="color:#4fc3f7;text-decoration:none;padding:0.3rem 0.6rem;border:1px solid #333;border-radius:4px;font-size:0.8rem">原神 Genshin</a>
+      <a href="https://chjiya.github.io/hsr-guide/" style="color:#4fc3f7;text-decoration:none;padding:0.3rem 0.6rem;border:1px solid #333;border-radius:4px;font-size:0.8rem">星铁 HSR</a>
+      <a href="https://chjiya.github.io/zzz-guide/" style="color:#4fc3f7;text-decoration:none;padding:0.3rem 0.6rem;border:1px solid #333;border-radius:4px;font-size:0.8rem">绝区零 ZZZ</a>
+      <a href="https://chjiya.github.io/sr-guide-en/" style="color:#4fc3f7;text-decoration:none;padding:0.3rem 0.6rem;border:1px solid #333;border-radius:4px;font-size:0.8rem">HSR (EN)</a>
+      <a href="https://chjiya.github.io/enshin-guide-en/" style="color:#4fc3f7;text-decoration:none;padding:0.3rem 0.6rem;border:1px solid #333;border-radius:4px;font-size:0.8rem">Genshin (EN)</a>
+      <a href="https://chjiya.github.io/zzz-guide-en/" style="color:#4fc3f7;text-decoration:none;padding:0.3rem 0.6rem;border:1px solid #333;border-radius:4px;font-size:0.8rem">ZZZ (EN)</a>
+    </div>
+  </footer>
+</body>
+</html>
